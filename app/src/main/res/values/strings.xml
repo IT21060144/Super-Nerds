@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Diet Management</string>
+    <string name="btnProfile">Profile</string>
+    <string name="btnGoal">Goal</string>
+    <string name="btnMenu">Menu</string>
+    <string name="btnHealth">Health</string>
+    <string name="TvHint">Name</string>
+    <string name="TvHint2">Email</string>
+    <string name="btnName">Name</string>
+    <string name="btnEmail">Email</string>
+</resources>
