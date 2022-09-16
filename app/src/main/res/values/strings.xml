@@ -15,4 +15,9 @@
     <string name="Height">Height</string>
     <string name="Weight">Weight</string>
     <string name="MyFood">MyFood</string>
+    <string name="caption">Who Are You?</string>
+    <string name="who">I am</string>
+    <string name="body">My body fat</string>
+    <string name="weight">Weight Goal</string>
+    <string name="wgd">Weight Goal : date</string>
 </resources>

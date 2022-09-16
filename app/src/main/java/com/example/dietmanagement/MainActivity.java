@@ -1,5 +1,6 @@
 package com.example.dietmanagement;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -46,11 +47,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, msg1, Toast.LENGTH_SHORT).show();
     }
 
-    public void onButtonClick(View v){
+    public void onButtonClick1(@NonNull View v){
         if(v.getId() == R.id.btnProfile)
         {
            Intent i = new Intent(MainActivity.this,profile.class);
            startActivity(i) ;
+        }
+
+    }
+
+    public void onButtonClick2(@NonNull View v){
+        if(v.getId() == R.id.btnGoal)
+        {
+            Intent i = new Intent(MainActivity.this,goal.class);
+            startActivity(i) ;
         }
 
     }

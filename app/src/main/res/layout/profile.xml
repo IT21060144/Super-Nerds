@@ -7,11 +7,11 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/viewCaption"
         android:layout_width="231dp"
         android:layout_height="94dp"
         android:layout_marginTop="64dp"
-        android:text="Who are you?"
+        android:text="@string/caption"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,18 +22,18 @@
         android:id="@+id/lblName"
         android:layout_width="121dp"
         android:layout_height="41dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="64dp"
-        android:text="TextView"
+        android:text="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/lblAge"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/viewCaption" />
 
     <TextView
         android:id="@+id/viewName"
         android:layout_width="111dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="52dp"
-        android:text="TextView"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblName"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -43,7 +43,8 @@
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
+        android:text="@string/Age"
+        app:layout_constraintBottom_toTopOf="@+id/lblGender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblName" />
 
@@ -51,8 +52,7 @@
         android:id="@+id/viewAge"
         android:layout_width="110dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="52dp"
-        android:text="TextView"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblAge"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -62,16 +62,16 @@
         android:layout_height="42dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
+        android:text="@string/Gender"
+        app:layout_constraintBottom_toTopOf="@+id/lblGoal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblAge" />
 
     <TextView
         android:id="@+id/viewGender"
-        android:layout_width="104dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="56dp"
-        android:text="TextView"
+        android:layout_width="105dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblGender"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -81,16 +81,16 @@
         android:layout_height="42dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
-        android:text="TextView"
+        android:text="@string/Goal"
+        app:layout_constraintBottom_toTopOf="@+id/lblHeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblGender" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="107dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="52dp"
-        android:text="TextView"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblGoal"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -100,7 +100,8 @@
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
-        android:text="TextView"
+        android:text="@string/Height"
+        app:layout_constraintBottom_toTopOf="@+id/lblWeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblGoal" />
 
@@ -108,28 +109,29 @@
         android:id="@+id/viewHeight"
         android:layout_width="110dp"
         android:layout_height="36dp"
-        android:layout_marginEnd="48dp"
-        android:text="TextView"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblHeight"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/lblWeight"
-        android:layout_width="121dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="36dp"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Weight"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblHeight" />
 
     <TextView
         android:id="@+id/viewWeight"
-        android:layout_width="110dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="48dp"
-        android:text="TextView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/lblWeight"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
