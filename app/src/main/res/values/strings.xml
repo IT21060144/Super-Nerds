@@ -8,4 +8,11 @@
     <string name="TvHint2">Email</string>
     <string name="btnName">Name</string>
     <string name="btnEmail">Email</string>
+    <string name="Name">Name</string>
+    <string name="Age">Age</string>
+    <string name="Gender">Gender</string>
+    <string name="Goal">Goal</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="MyFood">MyFood</string>
 </resources>

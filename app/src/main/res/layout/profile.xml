@@ -17,4 +17,119 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="121dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="111dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblName" />
+
+    <TextView
+        android:id="@+id/viewAge"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblAge"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAge" />
+
+    <TextView
+        android:id="@+id/viewGender"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblGender"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblGoal"
+        android:layout_width="122dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGender" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="52dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblGoal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblHeight"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGoal" />
+
+    <TextView
+        android:id="@+id/viewHeight"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="48dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblHeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblWeight"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHeight" />
+
+    <TextView
+        android:id="@+id/viewWeight"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblWeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
