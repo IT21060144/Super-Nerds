@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#8003A9F4">
 
     <TextView
         android:id="@+id/viewCaption"
@@ -13,7 +14,9 @@
         android:layout_marginTop="64dp"
         android:text="@string/caption"
         android:textAlignment="center"
+        android:textColor="#3F51B5"
         android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,6 +28,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="64dp"
         android:text="@string/Name"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/lblAge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewCaption" />
@@ -44,6 +50,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:text="@string/Age"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/lblGender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblName" />
@@ -63,6 +72,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         android:text="@string/Gender"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/lblGoal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblAge" />
@@ -82,6 +94,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
         android:text="@string/Goal"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/lblHeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblGender" />
@@ -101,6 +116,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:text="@string/Height"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/lblWeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblGoal" />
@@ -121,6 +139,9 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="16dp"
         android:text="@string/Weight"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblHeight" />

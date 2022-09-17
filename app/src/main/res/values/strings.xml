@@ -20,4 +20,9 @@
     <string name="body">My body fat</string>
     <string name="weight">Weight Goal</string>
     <string name="wgd">Weight Goal : date</string>
+    <string name="calory">Calory Goal</string>
+    <string name="Na">Name</string>
+    <string name="Em">Email</string>
+    <string name="InputName">xxx</string>
+    <string name="InputEmail">xxx</string>
 </resources>

@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        InputName = findViewById(R.id.editTextTextPersonName6);
-        InputEmail = findViewById(R.id.editTextTextPersonName7);
+        InputName = findViewById(R.id.editTextTextPersonName3);
+        InputEmail = findViewById(R.id.editTextTextPersonName4);
 
         String msg = InputName.getText().toString();
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
