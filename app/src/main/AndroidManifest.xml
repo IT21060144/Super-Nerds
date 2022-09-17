@@ -23,6 +23,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".profile"></activity>
+        <activity android:name=".goal"></activity>
+        <activity android:name=".menu"></activity>
+        <activity android:name=".health"></activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -25,7 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="148dp"
+        android:onClick="onButtonClick3"
         android:text="menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnHealth"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
         android:layout_marginEnd="60dp"
+        android:onClick="onButtonClick4"
         android:text="health"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnMenu"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="76dp"
         android:onClick="onButtonClick1"
         android:text="profile"
@@ -56,7 +58,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btnGoal"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnName"
@@ -80,8 +83,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="83dp"
-        android:layout_height="66dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,8 +93,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="174dp"
-        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="48dp"
         android:ems="10"
@@ -101,8 +104,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="174dp"
-        android:layout_height="67dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="44dp"
         android:ems="10"
@@ -112,8 +115,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="79dp"
-        android:layout_height="62dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"
@@ -126,7 +129,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"
@@ -139,8 +142,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="77dp"
-        android:layout_height="66dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="36dp"

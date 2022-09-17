@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, msg1, Toast.LENGTH_SHORT).show();
     }
 
-    public void onButtonClick1(@NonNull View v){
+    public void onButtonClick1( View v){
         if(v.getId() == R.id.btnProfile)
         {
            Intent i = new Intent(MainActivity.this,profile.class);
@@ -56,10 +56,28 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onButtonClick2(@NonNull View v){
+    public void onButtonClick2(View v){
         if(v.getId() == R.id.btnGoal)
         {
             Intent i = new Intent(MainActivity.this,goal.class);
+            startActivity(i) ;
+        }
+
+    }
+
+    public void onButtonClick3( View v){
+        if(v.getId() == R.id.btnMenu)
+        {
+            Intent i = new Intent(MainActivity.this,menu.class);
+            startActivity(i) ;
+        }
+
+    }
+
+    public void onButtonClick4( View v){
+        if(v.getId() == R.id.btnHealth)
+        {
+            Intent i = new Intent(MainActivity.this,health.class);
             startActivity(i) ;
         }
 
