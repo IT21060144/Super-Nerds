@@ -9,17 +9,154 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="218dp"
-        android:layout_height="83dp"
+        android:layout_width="202dp"
+        android:layout_height="53dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="32dp"
         android:text="@string/hd"
         android:textColor="#3F51B5"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblnurtition"
+        android:layout_width="151dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/ns"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/viewPerson"
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="36dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblnurtition"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblbodymass"
+        android:layout_width="349dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="328dp"
+        android:text="@string/bm"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="178dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/inputno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblkg"
+        app:layout_constraintTop_toBottomOf="@+id/lblbodymass" />
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/inputnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblm"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <TextView
+        android:id="@+id/lblkg"
+        android:layout_width="107dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/kg"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/txtnum1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblbodymass" />
+
+    <TextView
+        android:id="@+id/lblm"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/m"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtnum2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblkg"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/BMI"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewBMI"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/cal"
+        app:layout_constraintBottom_toTopOf="@+id/viewBMI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/viewBMI"
+        android:layout_width="114dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtBMI"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
