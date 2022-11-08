@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="divider" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="marginHorizontal">10dp</item>
+    </style>
+
+    // buttons
+
+    <style name="button_link">
+        <item name="background">@color/transparent</item>
+        <item name="backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="button_primary">
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/dark</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor"> @color/light</item>
+        <item name="textAllCaps"> false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">0dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+    </style>
+
+    <style name="button_primary_dialog">
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/dark</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor"> @color/light</item>
+        <item name="textAllCaps"> false</item>
+        <item name="elevation">0dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+    </style>
+
+    <style name="button_danger">
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/red_medium</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor"> @color/light</item>
+        <item name="textAllCaps"> false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">0dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+    </style>
+
+    <style name="button_muted">
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/lightest_grey</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor"> @color/dark</item>
+        <item name="textAllCaps"> false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">0dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+    </style>
+
+    <style name="button_danger_dialog">
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/red_medium</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor"> @color/light</item>
+        <item name="textAllCaps"> false</item>
+        <item name="elevation">0dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+    </style>
+
+    <style name="button_outlined" >
+        <item name="android:layout_height">70dp</item>
+        <item name="backgroundTint">@color/light</item>
+        <item name="android:textSize"> 15sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">0dp</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:shadowColor">@color/transparent</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="button_icon" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="backgroundTint">@color/light</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="iconSize">30dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="iconTint">@null</item>
+        <item name="iconPadding">20dp</item>
+        <item name="strokeColor">@color/dark</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">10dp</item>
+
+    </style>
+
+    <style name="button_neutral" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="background">@color/light</item>
+        <item name="backgroundTint">@color/light</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="button_right_box" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="backgroundTint">@color/light</item>
+        <item name="endIconTint">@color/dark</item>
+        <item name="iconGravity">start</item>
+    </style>
+
+    <style name="icon_button" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="cornerRadius">10dp</item>
+        <item name="iconTint">@color/dark</item>
+        <item name="iconSize">25sp</item>
+        <item name="backgroundTint">@color/light</item>
+        <item name="iconGravity">textEnd</item>
+    </style>
+
+    <style name="icon_button_transparent" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="cornerRadius">10dp</item>
+        <item name="iconTint">@color/light</item>
+        <item name="iconSize">25sp</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="iconGravity">textEnd</item>
+    </style>
+
+    // input fields
+
+    <style name="textInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorHint">@color/dark</item>
+        <item name="boxStrokeColor">@color/input_field_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="errorIconDrawable">@drawable/ic_baseline_error_24</item>
+        <item name="errorIconTint">@color/red_medium</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="startIconTint">@color/icon_tint_color</item>
+
+    </style>
+
+    <style name="textInput_borderless" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox" >
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorHint">@color/dark</item>
+        <item name="errorIconDrawable">@drawable/ic_baseline_error_24</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/light</item>
+        <item name="background">@color/light</item>
+        <item name="backgroundTint">@color/light</item>
+        <item name="errorIconTint">@color/red_medium</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="startIconTint">@color/icon_tint_color</item>
+
+    </style>
+
+    <style name="select_text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <item name="height">70dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="drawableTint">@color/icon_tint_color</item>
+        <item name="android:drawablePadding">10dp</item>
+
+    </style>
+
+    // text
+
+    <style name="text_desc">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="marginHorizontal">10dp</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="text_title_1">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/light</item>
+    </style>
+    <style name="text_title_2">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/light</item>
+    </style>
+    <style name="text_title_1_normal">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+    <style name="text_title_1_bold">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="text_icon">
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="drawableSize">2sp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="text_icon_large_top">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="drawableSize">2sp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="icon_text">
+        <item name="android:width">13sp</item>
+        <item name="android:height">13sp</item>
+    </style>
+
+    <style name="text_tip">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    // dialog boxes
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/dark</item>
+        <item name="android:colorAccent">@color/dark</item>
+        <item name="textColorAlertDialogListItem">@color/dark</item>
+        <item name="buttonBarPositiveButtonStyle">@style/button_primary_dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/button_neutral</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:background">@color/light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MyAlertDialogTheme_danger" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/dark</item>
+        <item name="android:colorAccent">@color/dark</item>
+        <item name="textColorAlertDialogListItem">@color/dark</item>
+        <item name="buttonBarPositiveButtonStyle">@style/button_danger_dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/button_neutral</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:background">@color/light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+</resources>

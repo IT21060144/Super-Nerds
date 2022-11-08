@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/program_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/btn_today_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:text="Today"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IV_photo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/background_placeholder"
+                android:backgroundTint="@color/dark_overlay"
+                android:backgroundTintMode="src_over"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TV_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_stroke_1"
+                android:padding="15dp"
+                android:text="Everyday"
+                android:textColor="@color/dark"
+                android:textAlignment="center"
+                style="@style/text_title_2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/TV_time"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        app:drawableLeftCompat="@drawable/ic_baseline_timer_24" />
+
+                    <TextView
+                        android:id="@+id/TV_workouts"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 workouts"
+                        android:layout_marginTop="5dp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_directions_run_24" />
+
+                    <TextView
+                        android:id="@+id/TV_diffivculty"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 🟢   Mild workload"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edit_btn"
+                    style="@style/icon_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/ic_baseline_edit_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/cd_favorite_btn"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/divider_dotted"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IV_photo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_placeholder_yellow"
+                android:backgroundTint="@color/dark_overlay"
+                android:backgroundTintMode="src_over"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TV_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_stroke_1"
+                android:padding="15dp"
+                android:text="Monday"
+                android:textColor="@color/dark"
+                android:textAlignment="center"
+                style="@style/text_title_2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/TV_time"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        app:drawableLeftCompat="@drawable/ic_baseline_timer_24" />
+
+                    <TextView
+                        android:id="@+id/TV_workouts"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 workouts"
+                        android:layout_marginTop="5dp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_directions_run_24" />
+
+
+                    <TextView
+                        android:id="@+id/TV_difficulty"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 🟠   Medium workload"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edit_btn"
+                    style="@style/icon_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/ic_baseline_edit_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/cd_favorite_btn"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IV_photo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_placeholder_grey2"
+                android:backgroundTint="@color/dark_overlay"
+                android:backgroundTintMode="src_over"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TV_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_stroke_1"
+                android:padding="15dp"
+                android:text="Tuesday"
+                android:textColor="@color/dark"
+                android:textAlignment="center"
+                style="@style/text_title_2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/TV_time"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        app:drawableLeftCompat="@drawable/ic_baseline_timer_24" />
+
+                    <TextView
+                        android:id="@+id/TV_workouts"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 workouts"
+                        android:layout_marginTop="5dp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_directions_run_24" />
+
+
+                    <TextView
+                        android:id="@+id/TV_diffivculty"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 🔴   Heavy workload"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edit_btn"
+                    style="@style/icon_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/ic_baseline_edit_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/cd_favorite_btn"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IV_photo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/background_placeholder"
+                android:backgroundTint="@color/dark_overlay"
+                android:backgroundTintMode="src_over"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TV_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_stroke_1"
+                android:padding="15dp"
+                android:text="Wednesday"
+                android:textColor="@color/dark"
+                android:textAlignment="center"
+                style="@style/text_title_2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/TV_time"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        app:drawableLeftCompat="@drawable/ic_baseline_timer_24" />
+
+                    <TextView
+                        android:id="@+id/TV_workouts"
+                        style="@style/text_icon"
+                        android:drawableTint="@color/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12 workouts"
+                        android:layout_marginTop="5dp"
+                        app:drawableLeftCompat="@drawable/ic_baseline_directions_run_24" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edit_btn"
+                    style="@style/icon_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:icon="@drawable/ic_baseline_edit_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/cd_favorite_btn"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

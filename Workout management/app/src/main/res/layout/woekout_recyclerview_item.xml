@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_table_row">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Workout 1"
+
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/level"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="5dp" />
+
+    <TextView
+        android:id="@+id/level"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🟢"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sets"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:drawableTint="@color/dark"
+        android:text="3 sets"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/level" />
+
+    <TextView
+        android:id="@+id/textView15"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:drawableTint="@color/dark"
+        android:text="x"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sets"
+        app:layout_constraintEnd_toStartOf="@+id/reps" />
+
+    <TextView
+        android:id="@+id/reps"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:drawableTint="@color/dark"
+        android:text="3 reps"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/rest"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:drawableTint="@color/dark"
+
+        android:text="Rest - 1min"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sets"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/variant"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/dark"
+        android:text="Basic"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/text_title_1_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/dark"
+        android:text="-"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/dark"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@+id/title" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/divider"
+        android:layout_width="391dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

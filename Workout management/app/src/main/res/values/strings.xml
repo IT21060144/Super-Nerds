@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_workout">Workout</string>
+    <string name="menu_diet">Diet</string>
+    <string name="menu_profile">Profile</string>
+
+    // tabs
+    <string name="tab_menu_start">Start</string>
+    <string name="tab_menu_plan">My Plans</string>
+    <string name="tab_menu_today">Today</string>
+    <string name="tab_menu_exercise">Exercise</string>
+    <string name="tab_menu_meals">Meals</string>
+    <string name="tab_menu_favorites">Favorites</string>
+    <string name="tab_menu_explore">Explore</string>
+    <string name="tab_menu_program">My Program</string>
+
+    // hints
+    <string name="heading_login">Sign in</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="heading_register">Register</string>
+    <string name="hint_name">Enter your Name</string>
+    <string name="hint_repassword">Confirm your password</string>
+    <string name="hint_dob">Date Of Birth</string>
+    <string name="hint_google_login">Google</string>
+    <string name="hint_fb_login">FaceBook</string>
+    <string name="hint_ms_login">SIgn in with Microsoft</string>
+    <string name="hint_search">Search Workout plans</string>
+    <string name="helper_required">Required</string>
+
+    // sample text
+    <string name="text_or">OR</string>
+    <string name="login_separation_1">Or Login with</string>
+    <string name="login_separation_2">Don\'t have an account?</string>
+    <string name="register_separation_1">Already have an account?</string>
+    <string name="sample_title_workoutplan">Workout Plan Title</string>
+    <string name="sample_desc">This is a small description about the workout plan that briefly explains the work amount of hours and work, and the type of people who would be interested in this workout plan.</string>
+    <string name="sample_button_view_item">View Workout Plan</string>
+    <string name="sample_price">LKR 1250.00</string>
+    <string name="sample_weeks">8 weeks</string>
+    <string name="sample_time">18 mins</string>
+    <string name="sample_level">Intermediate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cd_favorite_btn">Add to Favorites</string>
+    <string name="cd_back_btn">Back to wrkout plan list</string>
+    <string name="price_title">Price</string>
+    <string name="level_title">Experience Level</string>
+    <string name="time_title">Workout time</string>
+    <string name="weeks_title">Plan Duration</string>
+    <string name="sample_plan_title">Short Plan Title</string>
+    <string name="sample_freq">3 days</string>
+    <string name="sample_danger">Deletion of a plan will revoke the purchase made, this is an irrecoverable process</string>
+
+</resources>

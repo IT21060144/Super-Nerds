@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_medium">#FFBF00</color>
+    <color name="yellow_light">#FFDC75</color>
+    <color name="yellow_dark">#E1A800</color>
+
+    <color name="orange_medium">#FF4F30</color>
+    <color name="orange_light">#FF6D53</color>
+    <color name="orange_dark">#E1381A</color>
+
+
+    <color name="red_light">#FF9F98</color>
+    <color name="red_medium">#D10000</color>
+    <color name="red_dark">#B60C00</color>
+    <color name="dark">#000000</color>
+    <color name="light">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_grey">#868686</color>
+    <color name="lightest_grey">#CCCCCC</color>
+
+    <color name="dark_overlay">#72000000</color>
+
+</resources>
